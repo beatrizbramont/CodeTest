@@ -4,9 +4,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
   }
   
-  
+  .Text{
+    text-align: center;
+  }
+
   svg {
     overflow: visible;
   }
