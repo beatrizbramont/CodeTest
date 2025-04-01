@@ -8,6 +8,15 @@
 </head>
 <body>
     <div class="img"></div>
+
+    <div class="play">
+        <audio id="audio" preload="auto">
+            <source src="./14 - Matheus _ Kauan - Que Sorte A Nossa(MP3_320K).mp3" type="audio/mp3">
+        </audio>
+
+        <img src="./play.png" id="play-button" style="cursor: pointer;">
+    </div>
+
     <div class="card">
         <h1>Feliz 3 Meses meu amô!</h1>
         <p>Obrigada por você ser essse namorado maravilhoso, tenho muita sorte em te ter na minha vida.</p>
@@ -26,8 +35,24 @@
                 97.28 3.97-24.44 20.45-.23c1.31-.01 14.4-14.22 15.68-14.07 1.32.16 6.69 14.09 7.94 14.07" />   
         </svg>
     </div>
+
+    <script>
+        document.getElementById('play-button').addEventListener('click', function() {
+            var audio = document.getElementById('audio');
+            if (audio.paused) {
+                audio.play();  
+                this.src = 'pause.png';
+            } else {
+                audio.pause();  
+                this.src = 'play.png';  
+            }
+        });
+    </script>
+
 </body>
 </html>
+
+
 
 
 

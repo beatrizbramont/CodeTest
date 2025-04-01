@@ -19,6 +19,22 @@ body {
  
 }
 
+.play {
+    position: absolute;
+    bottom: 20px;
+}
+
+.play img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.play img:hover {
+    transform: scale(1.1);
+}
+
+
 .card {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(167, 231, 178))rgb(167, 231, 178);
     padding: 20px;
@@ -66,6 +82,7 @@ svg {
     stroke-dashoffset: 1;
     animation: dash 4s linear infinite;
   }
+
   svg path#heart {
     transform-origin: 50% 50%;
     animation: blink 4s linear infinite;
